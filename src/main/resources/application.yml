@@ -1,0 +1,14 @@
+security:
+  oauth2:
+    client:
+      # From OIDC app
+      clientId: 0oaflnbhttBi8YEdb0h7
+      clientSecret: aaCL6SQSLd0U7ah5pWVb_aBmK_CsCEMobVm0VxQA
+      # From Authorization Server's metadata
+      accessTokenUri: https://dev-580343.oktapreview.com/oauth2/default/v1/token  
+      userAuthorizationUri: https://dev-580343.oktapreview.com/oauth2/default/v1/authorize 
+      clientAuthenticationScheme: form
+      scope: openid profile email
+    resource:
+      # from your Auth Server's metadata, check .well-known/openid-configuration if not in .well-known/oauth-authorization-server
+      userInfoUri: https://dev-580343.oktapreview.com/oauth2/default/v1/userinfo
